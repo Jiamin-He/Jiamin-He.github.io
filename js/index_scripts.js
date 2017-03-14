@@ -92,7 +92,7 @@ window.onload = function() {
       var scrollMessages = anime({
         targets: messagesEl,
         scrollTop: bubbleOffset,
-        duration: 250
+        duration: 25
       });
     }
     var bubbleSize = anime({
@@ -100,13 +100,13 @@ window.onload = function() {
       width: ['0rem', dimensions.loading.w],
       marginTop: ['2.5rem', 0],
       marginLeft: ['-2.5rem', 0],
-      duration: 300,
+      duration: 30,
       easing: 'easeOutElastic'
     });
     var loadingLoop = anime({
       targets: elements.bubble,
       scale: [1.05, .95],
-      duration: 300,
+      duration: 30,
       loop: true,
       direction: 'alternate',
       easing: 'easeInOutQuad'
@@ -115,7 +115,7 @@ window.onload = function() {
       targets: elements.loading,
       translateX: ['-2rem', '0rem'],
       scale: [.5, 1],
-      duration: 200,
+      duration: 20,
       delay: 15,
       easing: 'easeOutElastic',
     });
@@ -123,10 +123,10 @@ window.onload = function() {
       targets: elements.bubble.querySelectorAll('b'),
       scale: [1, 1.25],
       opacity: [.5, 1],
-      duration: 250,
+      duration: 25,
       loop: true,
       direction: 'alternate',
-      delay: function(i) {return (i * 150) + 50}
+      delay: function(i) {return (i * 15) + 5}
     });
     setTimeout(function() {
       loadingLoop.pause();
@@ -141,7 +141,7 @@ window.onload = function() {
             anime({
               targets: elements.message,
               opacity: [0, 1],
-              duration: 100,
+              duration: 10,
             });
           }
         }
