@@ -94,7 +94,7 @@ window.onload = function() {
       var scrollMessages = anime({
         targets: messagesEl,
         scrollTop: bubbleOffset,
-        duration: 450
+        duration: 350
       });
     }
     var bubbleSize = anime({
@@ -102,13 +102,13 @@ window.onload = function() {
       width: ['0rem', dimensions.loading.w],
       marginTop: ['2.5rem', 0],
       marginLeft: ['-2.5rem', 0],
-      duration: 400,
+      duration: 300,
       easing: 'easeOutElastic'
     });
     var loadingLoop = anime({
       targets: elements.bubble,
       scale: [1.05, .95],
-      duration: 500,
+      duration: 400,
       loop: true,
       direction: 'alternate',
       easing: 'easeInOutQuad'
@@ -117,7 +117,7 @@ window.onload = function() {
       targets: elements.loading,
       translateX: ['-2rem', '0rem'],
       scale: [.5, 1],
-      duration: 200,
+      duration: 100,
       delay: 25,
       easing: 'easeOutElastic',
     });
@@ -125,7 +125,7 @@ window.onload = function() {
       targets: elements.bubble.querySelectorAll('b'),
       scale: [1, 1.25],
       opacity: [.5, 1],
-      duration: 150,
+      duration: 50,
       loop: true,
       direction: 'alternate',
       delay: function(i) {return (i * 100) + 50}
@@ -143,7 +143,7 @@ window.onload = function() {
             anime({
               targets: elements.message,
               opacity: [0, 1],
-              duration: 150,
+              duration: 50,
             });
           }
         }
@@ -158,7 +158,7 @@ window.onload = function() {
           if (messageIndex < messages.length) elements.bubble.classList.remove('cornered');
         }
       })
-    }, loadingDuration - 25);
+    }, loadingDuration - 15);
   }
 
   var sendMessages = function() {
