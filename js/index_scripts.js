@@ -77,7 +77,7 @@ window.onload = function() {
   }
 
   var sendMessage = function(message, position) {
-    var loadingDuration = (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed) ;
+    var loadingDuration = (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed/10) ;
     var elements = createBubbleElements(message, position);
     messagesEl.appendChild(elements.bubble);
     messagesEl.appendChild(document.createElement('br'));
@@ -115,7 +115,7 @@ window.onload = function() {
       targets: elements.loading,
       translateX: ['-2rem', '0rem'],
       scale: [.5, 1],
-      duration: 100,
+      duration: 200,
       delay: 15,
       easing: 'easeOutElastic',
     });
@@ -123,10 +123,10 @@ window.onload = function() {
       targets: elements.bubble.querySelectorAll('b'),
       scale: [1, 1.25],
       opacity: [.5, 1],
-      duration: 25,
+      duration: 250,
       loop: true,
       direction: 'alternate',
-      delay: function(i) {return (i * 15) + 2}
+      delay: function(i) {return (i * 150) + 50}
     });
     setTimeout(function() {
       loadingLoop.pause();
