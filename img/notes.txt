@@ -3,3 +3,9 @@ http://hgn.ai/
 
 header_big.png  http://hgn.ai/11RkOY/img1
 header_small.png http://hgn.ai/11RkOY/img2
+
+Jiamin_logo4_big.png http://hgn.ai/hlk04s/img1
+Jiamin_logo4_small.png http://hgn.ai/hlk04s/img2
+
+Jiamin_logo3_big.png http://hgn.ai/sUFR9P/img1
+Jiamin_logo3_small.png http://hgn.ai/sUFR9P/img2
