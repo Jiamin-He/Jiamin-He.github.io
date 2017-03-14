@@ -111,12 +111,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
    }
 
    h2 {
-   	font-family: "adelle-sans",sans-serif;
+   	/*font-family: "adelle-sans",sans-serif;*/
+    font-family: "Comic Sans MS",cursive, sans-serif;
    	font-size: 14px;
    	line-height: 18px;
    	font-style: normal;
    	font-weight: 400;
-   	color: #F25B44;
+   	color: #52c7f7;
    	margin: 0 0 6px;
    }
 
@@ -126,9 +127,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
    }
 
    li {
+    font-family: "Comic Sans MS",cursive, sans-serif;
    	font-size: 16px;
    	line-height: 25px;
    	margin: 0;
+    color: #323233;
    }
 
    p {
@@ -146,7 +149,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
    =================================== */
 
    a {
-   	color: #323233;
+   	color: #f27b99;
    	-webkit-transition: all 0.2s ease-in-out;
    	-moz-transition: all 0.2s ease-in-out;
    	transition: all 0.2s ease-in-out;
@@ -158,7 +161,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
    }
 
    a:visited {
-   	color: #323233;
+   	/*color: #323233;*/
+    color: #964e60;
    }
 
    p > a:visited {
