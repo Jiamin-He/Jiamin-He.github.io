@@ -34,6 +34,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     z-index: 2;
    }
 
+   #right {
+    right: 0;
+    top: 0;
+    position: fixed;
+    max-width: 30%;
+    max-height: 30%;
+   }
+
    #logo {
    	opacity: 1;
    	margin-bottom: 20px;
