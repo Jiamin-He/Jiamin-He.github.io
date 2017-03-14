@@ -79,7 +79,7 @@ window.onload = function() {
   }
 
   var sendMessage = function(message, position) {
-    var loadingDuration = (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed) + 500;
+    var loadingDuration = (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed) ;
     var elements = createBubbleElements(message, position);
     messagesEl.appendChild(elements.bubble);
     messagesEl.appendChild(document.createElement('br'));
@@ -102,13 +102,13 @@ window.onload = function() {
       width: ['0rem', dimensions.loading.w],
       marginTop: ['2.5rem', 0],
       marginLeft: ['-2.5rem', 0],
-      duration: 150,
+      duration: 300,
       easing: 'easeOutElastic'
     });
     var loadingLoop = anime({
       targets: elements.bubble,
       scale: [1.05, .95],
-      duration: 200,
+      duration: 300,
       loop: true,
       direction: 'alternate',
       easing: 'easeInOutQuad'
@@ -117,8 +117,8 @@ window.onload = function() {
       targets: elements.loading,
       translateX: ['-2rem', '0rem'],
       scale: [.5, 1],
-      duration: 50,
-      delay: 25,
+      duration: 100,
+      delay: 15,
       easing: 'easeOutElastic',
     });
     var dotsPulse = anime({
@@ -128,7 +128,7 @@ window.onload = function() {
       duration: 25,
       loop: true,
       direction: 'alternate',
-      delay: function(i) {return (i * 100) + 50}
+      delay: function(i) {return (i * 50) + 50}
     });
     setTimeout(function() {
       loadingLoop.pause();
