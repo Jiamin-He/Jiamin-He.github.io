@@ -128,7 +128,7 @@ window.onload = function() {
       duration: 25,
       loop: true,
       direction: 'alternate',
-      delay: function(i) {return (i * 50) + 50}
+      delay: function(i) {return (i * 20) + 50}
     });
     setTimeout(function() {
       loadingLoop.pause();
