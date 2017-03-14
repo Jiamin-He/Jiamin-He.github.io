@@ -16,17 +16,16 @@ window.onload = function() {
     var hours =  date.getHours();
     var minutes =  date.getMinutes();
     var current = hours + (minutes * .01);
-    if (current >= 5 && current < 19) return 'Have a nice day';
-    if (current >= 19 && current < 22) return 'Have a nice evening';
-    if (current >= 22 || current < 5) return 'Have a good night';
+    if (current >= 5 && current < 19) return 'Have a nice day🌞.<br>-Jiamin';
+    if (current >= 19 && current < 22) return 'Have a nice evening❤️.<br>-Jiamin';
+    if (current >= 22 || current < 5) return 'Have a good night🌛.<br>-Jiamin';
   }
 
   var messages = [
-    'Hey there 👋',
-    'I\'m Julian',
-    'I design and code things on the web',
-    'I\'m currently accepting freelance work.<br> You can contact me at <a href="mailto:hello@julian.gr">hello@julian.gr</a>',
-    '<a target="_blank" href="https://twitter.com/juliangarnier">twitter.com/juliangarnier</a><br><a target="_blank" href="https://codepen.io/juliangarnier">codepen.io/juliangarnier</a><br><a target="_blank" href="http://jiaminhe.com/about">about me</a><br><a target="_blank" href="https://github.com/juliangarnier">github.com/juliangarnier</a>',
+    'Hey there 👋. How are you doing? I\'m Jiamin He. <br> Sometimes, I was called as Miss He 😂. Sounds interesting, doesn\' it? <br> Call me Jiamin or Carmen as you like 😊.',
+    'I do...(work)(link to github.) I\'m currently ...👇<br><a target="_blank" href="https://twitter.com/juliangarnier">twitter.com/juliangarnier</a><br><a target="_blank" href="https://codepen.io/juliangarnier">codepen.io/juliangarnier</a><br><a target="_blank" href="https://github.com/juliangarnier">github.com/juliangarnier</a><br> You can contact me at <a href="mailto:hejiamin1995@gmail.com">hejiamin1995@gmail.com</a>',
+    'I like...(life,hobbies,social network)<br>links<br><a target="_blank" href="http://jiaminhe.com/about">about me</a><br><a target="_blank" href="http://jiaminhe.com/blog">blog</a>',
+//     '',
     getCurrentTime(),
     '👀 J.'
   ]
