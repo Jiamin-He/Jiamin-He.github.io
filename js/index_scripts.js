@@ -143,7 +143,7 @@ window.onload = function() {
             anime({
               targets: elements.message,
               opacity: [0, 1],
-              duration: 0,
+              duration: 100,
             });
           }
         }
