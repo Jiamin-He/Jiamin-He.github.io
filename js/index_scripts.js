@@ -94,7 +94,7 @@ window.onload = function() {
       var scrollMessages = anime({
         targets: messagesEl,
         scrollTop: bubbleOffset,
-        duration: 0
+        duration: 350
       });
     }
     var bubbleSize = anime({
