@@ -77,7 +77,7 @@ window.onload = function() {
   }
 
   var sendMessage = function(message, position) {
-    var loadingDuration = (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed/10) ;
+    var loadingDuration = (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed/3) ;
     var elements = createBubbleElements(message, position);
     messagesEl.appendChild(elements.bubble);
     messagesEl.appendChild(document.createElement('br'));
@@ -92,7 +92,7 @@ window.onload = function() {
       var scrollMessages = anime({
         targets: messagesEl,
         scrollTop: bubbleOffset,
-        duration: 25
+        duration: 200
       });
     }
     var bubbleSize = anime({
@@ -100,13 +100,13 @@ window.onload = function() {
       width: ['0rem', dimensions.loading.w],
       marginTop: ['2.5rem', 0],
       marginLeft: ['-2.5rem', 0],
-      duration: 30,
+      duration: 200,
       easing: 'easeOutElastic'
     });
     var loadingLoop = anime({
       targets: elements.bubble,
       scale: [1.05, .95],
-      duration: 30,
+      duration: 200,
       loop: true,
       direction: 'alternate',
       easing: 'easeInOutQuad'
@@ -115,7 +115,7 @@ window.onload = function() {
       targets: elements.loading,
       translateX: ['-2rem', '0rem'],
       scale: [.5, 1],
-      duration: 20,
+      duration: 100,
       delay: 15,
       easing: 'easeOutElastic',
     });
@@ -123,10 +123,10 @@ window.onload = function() {
       targets: elements.bubble.querySelectorAll('b'),
       scale: [1, 1.25],
       opacity: [.5, 1],
-      duration: 25,
+      duration: 200,
       loop: true,
       direction: 'alternate',
-      delay: function(i) {return (i * 15) + 5}
+      delay: function(i) {return (i * 100) + 35}
     });
     setTimeout(function() {
       loadingLoop.pause();
@@ -141,7 +141,7 @@ window.onload = function() {
             anime({
               targets: elements.message,
               opacity: [0, 1],
-              duration: 10,
+              duration: 100,
             });
           }
         }
@@ -164,7 +164,7 @@ window.onload = function() {
     if (!message) return;
     sendMessage(message);
     ++messageIndex;
-    setTimeout(sendMessages, (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed) + anime.random(900, 1200));
+    setTimeout(sendMessages, (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed/3) + anime.random(100, 300));
   }
 
   sendMessages();
