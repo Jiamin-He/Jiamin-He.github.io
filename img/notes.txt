@@ -1,0 +1,5 @@
+http://sgnk.net/
+http://hgn.ai/
+
+header_big.png  http://hgn.ai/11RkOY/img1
+header_small.png http://hgn.ai/11RkOY/img2

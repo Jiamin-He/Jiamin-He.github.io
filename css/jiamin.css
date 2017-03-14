@@ -29,14 +29,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
    }
 
    header {
-   	margin: 0 0 80px;
+   	margin: 0 0 20px;
     position: relative;
     z-index: 2;
    }
 
    #logo {
-   	opacity: .4;
-   	margin-bottom: 80px;
+   	opacity: 1;
+   	margin-bottom: 20px;
    }
 
    #left {
@@ -48,9 +48,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
    	margin-bottom: 60px;
    }
 
+   #previously {
+    bottom: 0;
+   }
+
    #face {
-   	position: fixed;
-   	bottom: 0;
+   	position: absolute;
+   	bottom: 40px;
    	right: 0;
     z-index: 1;
    }
