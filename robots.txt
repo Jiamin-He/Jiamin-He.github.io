@@ -1,0 +1,15 @@
+
+User-agent: *
+Allow: /blog
+Allow: /blog/archives/
+Allow: /blog/tags/
+
+Disallow: /blog/js/
+Disallow: /blog/css/
+Disallow: /blog/vendors/
+Disallow: /blog/fonts/
+Disallow: /blog/vendors/
+Disallow: /blog/fancybox/
+
+Sitemap: http://jiaminhe.com/blog/sitemap.xml
+Sitemap: http://jiaminhe.com/blog/baidusitemap.xml
