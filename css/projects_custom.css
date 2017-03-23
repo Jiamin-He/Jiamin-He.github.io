@@ -11,6 +11,11 @@ body {
     margin-left: -15px;
 }
 
+.badge-blue {
+    background-color: #096b92;
+    font-size: 18px;
+}
+
 .portfolio-item {
     margin-bottom: 25px;
 }
