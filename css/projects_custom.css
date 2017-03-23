@@ -16,6 +16,26 @@ body {
     font-size: 18px;
 }
 
+.badge-default {
+    font-size: 30px;
+}
+
+.badge-green {
+  background-color: #5cb85c;
+}
+
+.badge-yellow {
+  background-color: #f0ad4e;
+}
+
+.badge-red {
+  background-color: #d9534f;
+}
+
+.badge-lightBlue {
+  background-color: #5bc0de;
+}
+
 .portfolio-item {
     margin-bottom: 25px;
 }
