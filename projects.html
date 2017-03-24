@@ -16,6 +16,8 @@
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
     <link href="css/projects_custom.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,10 +27,10 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-light navbar-fixed-top" style="background-color:#9fdff9;" role="navigation">
+    <nav class="navbar navbar-light navbar-fixed-top" style="background-color:#9fdff9;" role="navigation" id="navbar-all">
         <div class="container">
             <!-- Logo and responsive toggle -->
             <div class="navbar-header">
@@ -44,21 +46,21 @@
             </div>
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-little">
                     <li class="nav-item active">
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Education</a>
+                        <a href="#education">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Volunteer</a>
+                        <a href="#volunteer">Volunteer</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a href="#">Globalization</a>
                     </li> -->
                     <li class="nav-item">
-                        <a href="#">Talks</a>
+                        <a href="#talks">Talks</a>
                     </li>                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -87,7 +89,7 @@
 
 
     <!-- Content -->
-    <div class="container">
+    <div class="container" id="projects">
         <!-- Heading -->
         <div class="row">
             <div class="col-lg-12">
@@ -111,7 +113,7 @@
                 <span class="badge badge-lightBlue">HCI-fabrication</span><span class="badge badge-red">3D printing</span> <span class="badge badge-green">HTML/CSS3</span> <span class="badge badge-yellow">WebGL/three.js</span> 
                  </p>
                 <p>
-                Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+                Trying assemble Online?<br> Have great ideas but new to 3D-printer? <br>Mistakes upsets you? <br>Want a designer and expertise to help you? <br>Personalize your furniture as if easily online-shopping in Amazon?<br><br>It's a project running by me at <strong class="blue">MIT CSAIL</strong>, US. I focus on the Internet of Things, Human-Computer Interaction and Personal Fabrication. <br><i class="fa fa-arrow-right blue" aria-hidden="true"></i> <strong class="blue"> Novice users' fabrication assistance in world's warehouse</strong></p>
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
@@ -121,9 +123,15 @@
                     <a href="#">What if <span class="badge badge-blue">NO</span> smartphone when you become <span class="badge badge-blue">OLDER</span>?</a>
                 </h3>
                 <p>
-                <span class="badge badge-lightBlue">HCI-touchscreen-interface</span><span class="badge badge-red">Java</span> <span class="badge badge-green">Android App</span> <span class="badge badge-yellow">tablet/smartphone</span> </p>
+                <span class="badge badge-lightBlue">HCI-touchscreen-interface</span><span class="badge badge-red">Java</span> <span class="badge badge-green">Android App</span> <span class="badge badge-yellow">Leapmotion</span> </p>
                 <p>
-                Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+                Imagine when you get old...<br>
+                You want to call your husband, but wrongly dialed your son...<br>
+                Accident requires you call 911. But it's hard for you to respond swiftly on the phone...<br>
+                Take care of older adults around you and me. <i class="fa fa-smile-o" aria-hidden="true"></i><br><br>
+                It's a project running by me at <strong class="blue">McGill SIS</strong>,Canada. I focus on 3D Motion Tracking, data cases analysis and App development. <br><i class="fa fa-arrow-right blue" aria-hidden="true"></i> <strong class="blue"> Older adults' touch interaction with smartphone</strong><br>
+                <a href="" class="black"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>pdf</a>
+                </p>
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
@@ -254,7 +262,7 @@
     <!-- /.container -->
 	
     <!-- Education -->
-    <div class="container">
+    <div class="container" id="education">
         <!-- Heading -->
         <div class="row">
             <div class="col-lg-12">
@@ -292,7 +300,7 @@
         <!-- Projects Row -->
 
         <!-- Heading -->
-        <div class="row">
+        <div class="row" id="internship">
             <div class="col-lg-12">
                 <h1 class="page-header">Internship
                     <small>Who am I, Where am I from, Where am I going to, What am I going to do?</small>
@@ -311,7 +319,7 @@
         <!-- Projects Row -->
 
         <!-- Heading -->
-        <div class="row">
+        <div class="row" id="awards">
             <div class="col-lg-12">
                 <h1 class="page-header">Scholarships & Awards
                     <small>That's the past.</small>
@@ -347,7 +355,7 @@
         <!-- Projects Row -->
 
         <!-- Heading -->
-        <div class="row">
+        <div class="row" id="affiliation">
             <div class="col-lg-12">
                 <h1 class="page-header">Affiliation & Chairing
                     <small>Enjoy every moment!</small>
@@ -381,7 +389,7 @@
         <!-- Projects Row -->
 
         <!-- Heading -->
-        <div class="row">
+        <div class="row" id="volunteer">
             <div class="col-lg-12">
                 <h1 class="page-header">Volunteering
                     <small>My Life-long Business.<span class="badge badge-red" style="font-size: 16px;">important!!!</span></small>
@@ -418,7 +426,7 @@
         <!-- Projects Row -->
 
         <!-- Heading -->
-        <div class="row">
+        <div class="row" id="talks">
             <div class="col-lg-12">
                 <h1 class="page-header">Talks
                     <small>Sharing</small>

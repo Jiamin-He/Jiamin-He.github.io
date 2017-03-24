@@ -1,5 +1,6 @@
 body {
     padding-top: 50px; /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
+    position: relative;
 }
 
 .navbar .navbar-header {
@@ -9,6 +10,14 @@ body {
 .navbar-brand {
     margin-top: -15px;
     margin-left: -15px;
+}
+
+.blue {
+    color: #096b92;
+}
+
+.black {
+    color: #000;
 }
 
 .badge-blue {
