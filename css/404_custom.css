@@ -1,0 +1,26 @@
+
+body {
+    padding-top: 50px; /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
+    position: relative;
+}
+
+.navbar .navbar-header {
+    min-height: 50px;
+}
+
+.navbar-brand {
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.alert {
+  padding: 45px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
